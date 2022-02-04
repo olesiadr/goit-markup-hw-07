@@ -84,7 +84,7 @@
                     <use href="images/symbol-defs.svg#close"></use>
                   </svg>
                 </button>
-              
+              <div class="modal__field">
                 <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
                 <form class="form js-speaker-form">
                <label for="name" class="form__field">
@@ -141,16 +141,13 @@
         </label>
 
  
-        <label for="policy" class="agreement"></label>
+        <label class="agreement">
          <input 
          type="checkbox" 
          name="agreement__checkbox" 
          class="agreement__checkbox" />
         
-            <svg class="agreement__icon" width="16" height="15">
-                    <use href="images/symbol-defs.svg#check"></use>
-                  </svg>
-          
+            <span class="agreement__icon"></span>
           <span class="agreement__text">Соглашаюсь с рассылкой и принимаю</span> 
           <a class="agreement__link" href="" rel="noopener noreferrer">Условия договора</a>
         </label>
@@ -160,6 +157,7 @@
         <span class="submit__text">Отправить</span>
       </button>
          </form>
+        </div>
       </div>
        </div>
               </div>
