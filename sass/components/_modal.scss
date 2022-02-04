@@ -1,0 +1,41 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $backdrop-bg-color;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity $main-effect, visibility $main-effect;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  min-width: 528px;
+  min-height: 581px;
+  background-color: $primary-color;
+  box-shadow: $modal-shadow;
+  border-radius: 4px;
+  opacity: 1;
+  visibility: visible;
+  transition: transform $main-effect, opacity $main-effect,
+    visibility $main-effect;
+
+  .backdrop.is-hidden & {
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}

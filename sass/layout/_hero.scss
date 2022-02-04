@@ -1,0 +1,55 @@
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: $hero-bg-gradient, url("../images/background-people.jpg");
+  background-color: var(--navigationfooter-background-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero__title {
+  color: $primary-color;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-top: 200px;
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.order__btn {
+  display: inline-block;
+  background-color: $accent-color;
+  color: $primary-color;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: transparent;
+  min-width: 200px;
+  transition: background-color $main-effect;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
+}

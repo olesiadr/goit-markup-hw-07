@@ -1,0 +1,11 @@
+.header {
+  background-color: $primary-color;
+  display: flex;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: $header-border;
+  }
+}

@@ -1,0 +1,20 @@
+.modal__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: $primary-color;
+  border: $button-close-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: fill $main-effect border-color $main-effect;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}

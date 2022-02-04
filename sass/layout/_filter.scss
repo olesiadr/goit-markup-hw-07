@@ -1,0 +1,34 @@
+.filter__list {
+  display: flex;
+  justify-content: center;
+}
+.filter__btn {
+  background-color: $primary-bg-color;
+  color: $title-text-color;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  padding: 6px 22px;
+  display: inline-block;
+  min-width: 73px;
+  text-align: center;
+  border: transparent;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  margin-right: 8px;
+  transition: backround-color $main-effect color $main-effect;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-color;
+  }
+  &----active {
+    background-color: $accent-color;
+    color: $primary-color;
+  }
+}
